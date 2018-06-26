@@ -25,7 +25,7 @@
                     <a class=\"nav-link text-uppercase text-expanded\" href=\"login.php\">Login</a>
                 </li>
                 <li class=\"nav-item px-lg-4\">
-                    <a class=\"nav-link text-uppercase text-expanded\" href=\"register.php\">Registreer</a>
+                    <a class=\"nav-link text-uppercase text-expanded\" href=\"register.php\">Register</a>
                 </li>
                 ";
                 ?>
@@ -36,4 +36,3 @@
         </div>
     </div>
 </nav>
-

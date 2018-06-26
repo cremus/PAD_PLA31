@@ -35,7 +35,7 @@
     <!-- Login Start -->
     <div class="container">
         <div class="jumbotron">
-            <div class="col-md-6 col-md-offset-3" style="margin-left: 275px; margin-top: 25px;>
+            <div class="col-md-6 col-md-offset-3" style="margin-left: 275px; margin-top: 25px;">
             <div class="row">
             <div class="col-md-11 col-md-offset-3" >
                 <h1 class="text-center"> Login </h1>

@@ -1,7 +1,7 @@
 <?php
 session_start();//start de sessie
 if (!$r = session_id()){
-    //header("location: login.php");
+    header("location: login.php");
 }
 $port = "3307";
 $db = new PDO('mysql:host=localhost;port='.$port.';dbname=pad;charset=utf8', 'root', 'root');//pdo verbinding voor sql queries. Port is 3307, adjust if launching on new machine
@@ -97,7 +97,7 @@ include "chart.php";
     <div id="chartContainer" style="height: 370px; width: 100%;">Here, have a chart!</div>
     <script type="text/javascript">
         // a planet API key is required
-        var planet_api_key = '7c43e05581e94ad9b907802ec0e9c903'
+        var planet_api_key = '7c43e05581e94ad9b907802ec0e9c903';
         // construct an Open Layers template string for a Planet item based
         // on its item_type and item_id
         function planet_template_url(item_type, item_id) {
