@@ -64,7 +64,7 @@ if ($_POST['submit']) {
     <section id="contact">
         <div class="container">
             <div class="jumbotron">
-                <div class="col-sm-10" style="margin-left: 250px; margin-top: -50px;>
+                <div class="col-sm-10" style="margin-left: 250px; margin-top: -50px;">
         <div class="row">
                 <div class="col-md-8 col-md-offset-3" >
                     <h1 class="text-center"> Contact Form</h1>
