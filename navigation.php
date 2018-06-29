@@ -18,6 +18,11 @@
                 <?php
                 if (isset($_SESSION)){
                     echo "<li class=\"nav-item px-lg-4\">
+                    <a class=\"nav-link text-uppercase text-expanded\" href=\"userPanel.php\">Userpanel</a>
+                </li>";
+                }
+                if (isset($_SESSION)){
+                    echo "<li class=\"nav-item px-lg-4\">
                     <a class=\"nav-link text-uppercase text-expanded\" href=\"logout.php\">Logout</a>
                 </li>";
                 }

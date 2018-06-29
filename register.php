@@ -1,14 +1,9 @@
 <?php
-//Om te connecten naar de MySQl server worden de volgende parameters gebruikt
-$hostname = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "pad";
-$port = "3307";
+//database.php wordt meegenomen voor verbinding met de database
+include 'database.php';
+?>
 
-//Conectie wordt gemaakt met de database, geen connectie is DIE dan stopt het met alles laat het de error zien
-$conn = mysqli_connect($hostname, $username, $password, $dbname, $port) or DIE ("".mysqli_connect_error());
-
+<?php
 //Pakt de gegevens wat ingevoerd wordt als de gebruiker op button 'SUBMIT' klikt anders gebeurt er niks
 if(isset($_POST['submit'])) {
   $email = $_POST['email'];
@@ -17,12 +12,12 @@ if(isset($_POST['submit'])) {
 
   // Dit is nu gedaan om sql injections te voorkomen
   //Bereid query voor
-  $register = $conn->prepare ("INSERT INTO `user` (`email`, `password`) VALUES (?, ?)");
+  $sql = $conn->prepare ("INSERT INTO `user` (`email`, `password`) VALUES (?, ?)");
   //Zet de variabele in de query gebruikt daarvoor ss omdat 2x string
-  $register->bind_param("ss", $email, $password);
+  $sql->bind_param("ss", $email, $password);
 
   //query wordt uitgevoerd en geeft 'created' aan anders 'not created'
-  if($register->execute() === TRUE) {
+  if($sql->execute() === TRUE) {
     echo "New record created";
   } else {
      echo "Not created";
