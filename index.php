@@ -21,7 +21,7 @@
 
       <!--Kop -->
       <h1 class="site-heading text-center text-white d-none d-lg-block">
-        <span class="site-heading-upper  mb-3">Project Agile Development Planet</span>
+        <span class="site-heading-upper  mb-3">MEME PAGE YAW YEET</span>
       </h1>
 
       <!-- Navigation -->
